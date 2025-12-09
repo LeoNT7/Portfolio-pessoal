@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contato</title>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+    <!--Conteudo principal-->
+    <main class="contato">
+        <h1>Meu Contato</h1>
+        <h2>Entre em Contato</h2>
+
+        <form id="form-contato" class="formulario">
+                
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com">
+
+            <label for="mensagem">Mensagem*</label>
+            <textarea id="mensagem" placeholder="Deixe sua mensagem aqui"></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <p id="status" class="status"></p>
+
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer class="footer">
+        <p>© 2025 Leonardo Bento — Portfólio Acadêmico</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/leonardo-bento-937a2024a/">
+                <img src="img/linkedin.svg" alt="LinkedIn"> LinkedIn
+            </a>
+            
+            <a href="https://github.com/LeoNT7">
+                <img src="img/github.svg" alt="GitHub"> GitHub
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
