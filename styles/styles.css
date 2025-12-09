@@ -110,12 +110,106 @@ body {
     filter: brightness(1) saturate(1.5);
 }
 
+/* === LAYOUT MOBILE-FIRST REAL === */
+* {
+    box-sizing: border-box;
+}
 
-/* responsividade – mobile */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste global para telas menores */
+@media (max-width: 900px) {
+
+    /* Deixa tudo LARGO e confortável no celular */
+    section, main {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
+
+    p, a, li {
+        font-size: 1rem;
+    }
+
+    /* MENU */
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu li a {
+        padding: 10px 20px !important;
+        font-size: 1rem !important;
+        display: block;
+    }
+
+    /* SOBRE */
+    .conteudo-sobre {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .texto-sobre {
+        max-width: 100% !important;
+    }
+
+    .foto-sobre img {
+        max-width: 280px;
+        width: 80%;
+    }
+
+    /* FORMAÇÃO */
+    .conteudo-formacao,
+    .conteudo-cursos {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    .portfolio-conteudo {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .portfolio-imagens img {
+        width: 48% !important;  /* DUAS POR LINHA */
+    }
+
+    /* FORM CONTATO */
+    .formulario {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* RODAPÉ */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
 
-    /* menu */
+    /* MENU */
     .menu {
         flex-wrap: wrap;
         gap: 5px;
@@ -126,9 +220,9 @@ body {
         font-size: 0.95rem;
     }
 
-    /* sobre mim */
+    /* SOBRE MIM */
     .conteudo-sobre {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 25px;
     }
@@ -148,7 +242,7 @@ body {
         font-size: 2rem;
     }
 
-    /* minha formação */
+    /* FORMAÇÃO */
     .formacao {
         padding: 10px;
         max-width: 95%;
@@ -167,7 +261,7 @@ body {
         font-size: 1.2rem;
     }
 
-    /* portfólio */
+    /* PORTFÓLIO */
     .portfolio h1 {
         font-size: 2rem;
         margin-top: 40px;
@@ -179,6 +273,7 @@ body {
         gap: 10px;
     }
 
+    /* Imagens lado a lado → agora em coluna */
     .portfolio-imagens {
         flex-direction: column;
         gap: 10px;
@@ -190,7 +285,7 @@ body {
         margin: 0 auto;
     }
 
-    /* meu contato */
+    /* CONTATO */
     .contato {
         padding: 10px;
         max-width: 95%;
@@ -208,7 +303,6 @@ body {
     .formulario input,
     .formulario textarea {
         font-size: 0.95rem;
-        width: auto;
     }
 
     .formulario button {
@@ -217,12 +311,14 @@ body {
     }
 }
 
-/* resposividade - mobile telas menores*/
+/* -----------------------
+   MOBILE BEM PEQUENO
+   ----------------------- */
 
 @media (max-width: 480px) {
 
     .menu li a {
-        padding: 0.7em 1.2em;
+        padding: 1em 1.2em;
         font-size: 0.85rem;
     }
 
@@ -245,3 +341,5 @@ body {
         padding: 15px;
     }
 }
+
+
